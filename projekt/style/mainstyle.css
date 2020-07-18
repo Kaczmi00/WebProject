@@ -1,0 +1,301 @@
+*
+{
+    padding: 0;
+    margin: 0;
+
+}
+button
+{
+    background: none;
+    outline: none;
+    cursor: pointer;
+}
+ul
+{
+    list-style: none;
+}
+a
+{
+    text-decoration: none;
+    color: inherit;
+}
+body
+{
+    font: 16px/1.5 "Dosis", sans-serif;
+}
+/* CONTAINER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.wrapper
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.wrapper > *
+{
+    padding: 10px;
+}
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-header img
+{
+    width:12em ;
+    height:auto;
+}
+.page-header nav
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.page-header ul
+{
+    display: flex;
+    order: 1;
+    width: 100%;
+    margin-top: 15px;
+    font-size: 1.5em;
+    justify-content: center;
+}
+.animation a:hover
+{
+    background-color: wheat;
+    color:white;
+    padding: 5px 18px;
+    border-radius: 30px 30px 30px 30px;
+    animation-delay: 1s;
+}
+.animation-visited:visited
+{
+    color:wheat;
+}
+.page-header ul li:not(:last-child)
+{
+    padding-right: 15px;
+}
+.page-header .cta-contact
+{
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 5px 18px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+/* MAIN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-main
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: up;
+    flex-grow: 2;
+    min-height: 42em;
+    background: url(../icons/background.jpg) no-repeat center / cover;;
+}
+.page-main-header
+{
+    width: 35em;
+    height: 3em;
+    display: flex;
+    color: black;
+    text-align: center;
+    background: wheat;
+    border-radius: 40px 40px 40px 40px;
+}
+.page-main p
+{
+    color:white;
+    font-weight: bolder;
+}
+.page-main-text
+{
+    background: black;
+    text-align:center;
+    border-radius: 40px 40px 40px 40px;
+}
+.page-main div
+{
+    max-width: 500px;
+    margin: 10px;
+    padding:10px;
+}
+.page-main p + p
+{
+    margin-top: 10px;
+}
+
+/*CONTAINER1
+--------------------------------------------------*/
+.container_1
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    font-size: 1em;
+}
+.container_1 img
+{
+    width:18em;
+   height: auto;
+   border-radius: 10px;
+   
+   
+}
+.paragraph
+{
+    float: center;
+	display:flex;
+    flex-direction: column;
+    padding: 1em;
+	background: wheat;
+	 border-radius: 10px;
+}
+.paragraph-img
+{
+    margin:2em;
+	
+	
+}
+
+/*CONTAINER2
+--------------------------------------------------*/
+.container_2
+{
+    display: flex;
+    flex-direction: column;
+    line-height: 2em;
+    font-size: 1em;
+}
+.container_2 img
+{
+    width:18em;
+   height: auto;
+   border-radius: 10px;
+   
+   
+}
+.Definition
+{
+    float: center;
+	display:flex;
+    flex-direction: column;
+    padding: 1em;
+	background: wheat;
+	 border-radius: 10px;
+}
+.Definition-img
+{
+    margin:2em;
+	
+	
+}
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer
+{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    background-color: tan;
+}
+.page-footer ul
+{
+    display: flex;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+.page-footer ul li:not(:last-child)
+{
+    margin-right: 20px;
+}
+
+
+/* Mediascreen
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media screen and (min-width: 550px)
+{
+    .page-header ul
+    {
+        width: auto;
+        margin-top: 0;
+    }
+
+    .page-header .cta-contact
+    {
+        order: 1;
+    }
+
+    .page-footer
+    {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .page-footer ul
+    {
+        margin-bottom: 0;
+    }
+}
+
+
+@media screen and (min-width: 768px)
+{
+    body
+    {
+        font-size: 18px;
+    }
+
+    .page-main
+    {
+        padding-left: 90px;
+    }
+}
+
+@media screen and (max-width: 1280px)
+{
+    .container_1
+    {
+        flex-direction: column;
+    }
+
+    .paragraph
+    {
+        flex-direction: column;
+    }
+    .paragraph-img img
+    {
+        width: 12em;
+        height:10em;
+    }
+    .paragraph-img
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 767px)
+{
+   
+    .Definition img
+    {
+        width: 14em;
+        height: auto;
+    }
+    .Definition-img
+    {
+        width: auto;
+    }
+    .page-main-header
+    {
+        width: auto;
+        height: auto;
+    }
+    .page-header ul
+    {
+        font-size:16px;
+    }
+}
